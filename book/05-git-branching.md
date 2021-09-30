@@ -1,3 +1,12 @@
+- [01: Làm việc BRANCH](#01-làm-việc-branch)
+  - [1 `branch` là gì?](#1-branch-là-gì)
+  - [2 `branch` master](#2-branch-master)
+  - [3 Tạo branch](#3-tạo-branch)
+  - [4 Chuyển đổi branch](#4-chuyển-đổi-branch)
+  - [5 Merge branches](#5-merge-branches)
+  - [6 Xóa branch](#6-xóa-branch)
+  - [7 Giải quyết xung đột bằng merge](#7-giải-quyết-xung-đột-bằng-merge)
+  - [8 Merge bằng rebase](#8-merge-bằng-rebase)
 # 01: Làm việc BRANCH
 
 ## 1 `branch` là gì?
