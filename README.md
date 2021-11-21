@@ -10,9 +10,9 @@ NCC Git Basic là một series về git cơ bản, trong series này mình sẽ 
 
 [3. The lifecycle of the status of your files: `git status` - `git add` - `git reset or git restore` - `git commit`](./book/03-lifecycle-of-the-status.md)
 
-[3.1 Stashing: `git stash`](./book/03-lifecycle-of-the-status.md)
+[3.1 Stashing: `git stash`](./book/03-lifecycle-of-the-status.md#8-git-stash)
 
-[4. Working with Remotes: `git pull` - `git push` - `git fetch` - `git remote`](./book/04-working-with-remotes.md)
+[4. Working with Remotes: `git remote` - `git pull` - `git push` - `git fetch`](./book/04-working-with-remotes.md)
 
 [4.1. HTTPS and SSH](./book/04-working-with-remote.md)
 
@@ -28,3 +28,29 @@ NCC Git Basic là một series về git cơ bản, trong series này mình sẽ 
 
 [9. Git Advanced - `rebase -i` and `commit --amend`](#)
 ## Git flow
+
+### 1. Work on new brand
+Check out from master or dev branch: `git checkout -b your-new-branch` 
+
+### 2. After finished your work. Add your change to staged and commit it
+`git add .` or `git add your-file-name`
+
+`git commit -m "Commit's message"`
+
+### 3. After commit, merge the latest code from remote branch
+#### 3.1. The first way - Use MERGE
+- Pull the latest code: `git pull origin dev` or `git pull origin master`
+- Fix the conflict if you have and commit it
+
+#### 3.2. The second way - Use REBASE
+- Checkout to master (or dev): `git checkout master`
+- Pull the latest code: `git pull origin master`
+- Checkout back to your new branch: `git checkout your-new-branch`
+- Rebase master: `git rebase master`
+- Fix the conflict if you have and then add it to staged `git add .` 
+- After that, use `git rebase --continue`
+
+### 4. Push your branch
+`git push origin your-new-branch`
+
+### 5. Create Merge Request on remote repository

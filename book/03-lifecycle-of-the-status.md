@@ -6,6 +6,7 @@
   - [5. `.gitignore` file](#5-gitignore-file)
   - [6. `git commit`](#6-git-commit)
   - [7. `git reset` or `git restore` to uncommit](#7-git-reset-or-git-restore-to-uncommit)
+  - [8. `git stash`](#8-git-stash)
 
 # Lifecycle of the Status
 
@@ -23,4 +24,8 @@
 
 ## 6. `git commit`
 
+- `git commit --amend`
+
 ## 7. `git reset` or `git restore` to uncommit
+
+## 8. `git stash`
