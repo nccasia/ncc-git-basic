@@ -47,7 +47,7 @@ Check out from master or dev branch: `git checkout -b your-new-branch`
 - Pull the latest code: `git pull origin master`
 - Checkout back to your new branch: `git checkout your-new-branch`
 - Rebase master: `git rebase master`
-- Fix the conflict if you have and then add it to staged `git add .` 
+- Fix the conflict if you have and then add it to staged `git add .`
 - After that, use `git rebase --continue`
 
 ### 4. Push your branch
