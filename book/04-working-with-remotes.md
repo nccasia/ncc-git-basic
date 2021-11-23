@@ -23,7 +23,7 @@
 ![](../assets/04-remote-branches-3.png)
 
 ## 3. `git pull` and `git fetch`
-
+Local update 1
 ## 4. `git push`
 
 **Dangerous** `git push -f` - Force Push
