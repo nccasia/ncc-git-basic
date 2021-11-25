@@ -1,37 +1,72 @@
-## Welcome to GitHub Pages
+# ncc-git-basic
 
-You can use the [editor on GitHub](https://github.com/nccasia/ncc-git-basic/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+NCC Git Basic là một series về git cơ bản, trong series này mình sẽ cố gắng chắt lọc và giới thiệu đến các bạn những kiến thức cơ bản nhất, hay được sử dụng trong thực tế nhất. Giúp các bạn tránh lan man, học dàn trải khi tiếp cận git.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[0. Git flow (step by step without git knowledge)](#git-flow)
 
-### Markdown
+[1. What is git?](./book/01-what-is-git.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[2. Getting Started: `git clone || git init`](./book/02-get-started.md)
 
-```markdown
-Syntax highlighted code block
+[3. The lifecycle of the status of your files: `git status` - `git add` - `git reset or git restore` - `git commit`](./book/03-lifecycle-of-the-status.md)
 
-# Header 1
-## Header 2
-### Header 3
+[3.1 Stashing: `git stash`](./book/03-lifecycle-of-the-status.md#8-git-stash)
 
-- Bulleted
-- List
+[4. Working with Remotes: `git remote` - `git pull` - `git push` - `git fetch`](./book/04-working-with-remotes.md)
 
-1. Numbered
-2. List
+[4.1. HTTPS and SSH](./book/04-working-with-remote.md)
 
-**Bold** and _Italic_ and `Code` text
+[5. Git Branching: `git branch` - `git checkout`](./book/05-git-branching.md)
 
-[Link](url) and ![Image](src)
-```
+[6. Git Branching(2) - Merging and Rebasing: `git merge` - `git rebase`](./book/06-git-branching-2-merging-and-rebasing.d)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+[6.1. Resolve Conflict](./book/06-git-branching-2-merging-and-rebasing.md)
 
-### Jekyll Themes
+[7. Git Branching(3) - Branch Management and Commit history: `git branch` - `git log`](./book/07-git-branching-branch-management-and-commit-history.md)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nccasia/ncc-git-basic/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[8. Git Advanced - Cherry Pick](#)
 
-### Support or Contact
+[9. Git Advanced - `rebase -i` and `commit --amend`](#)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Git flow
+
+### 1. Work on new brand
+
+Check out from master or dev branch: `git checkout -b your-new-branch`
+
+### 2. After finished your work. Add your change to staged and commit it
+
+`git add .` or `git add your-file-name`
+
+`git commit -m "Commit's message"`
+
+### 3. After commit, merge the latest code from remote branch
+
+#### 3.1. The first way - Use MERGE
+
+- Pull the latest code: `git pull origin dev` or `git pull origin master`
+- Fix the conflict if you have and commit it
+
+#### 3.2. The second way - Use REBASE
+
+- Checkout to master (or dev): `git checkout master`
+- Pull the latest code: `git pull origin master`
+- Checkout back to your new branch: `git checkout your-new-branch`
+- Rebase master: `git rebase master`
+- Fix the conflict if you have and then add it to staged `git add .`
+- After that, use `git rebase --continue`
+
+### 4. Push your branch
+
+`git push origin your-new-branch`
+
+### 5. Create Merge Request on remote repository
+
+**References**
+
+1. https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F
+2. https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/
+3. https://topdev.vn/blog/git-la-gi/
+4. https://www.atlassian.com/git/tutorials/git-ssh
+5. https://viblo.asia/p/git-dung-https-hay-ssh-eW65Gm9jZDO
+6. https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
