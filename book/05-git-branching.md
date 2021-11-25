@@ -39,7 +39,7 @@ New commit on master
 ![](../assets/05-advance-master.png)
 
 ```
-$ git log --oneline --decorate --graph --all
+$ git log --oneline --graph --all
 ```
 
 ```

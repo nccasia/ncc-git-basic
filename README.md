@@ -18,9 +18,9 @@ NCC Git Basic là một series về git cơ bản, trong series này mình sẽ 
 
 [5. Git Branching: `git branch` - `git checkout`](./book/05-git-branching.md)
 
-[6. Git Branching(2) - Merging and Rebasing: `git merge` - `git rebase`](./book/06-git-branching-2-merging-and-rebasing.d)
+[6. Git Branching(2) - Merging and Rebasing: `git merge` - `git rebase`](./book/06-git-branching-2-merging-and-rebasing.md)
 
-[6.1. Resolve Conflict](./book/06-git-branching-2-merging-and-rebasing.md)
+[6.1. Resolve Conflict](./book/06-git-branching-2-merging-and-rebasing.md/#12-basic-merge-conflicts)
 
 [7. Git Branching(3) - Branch Management and Commit history: `git branch` - `git log`](./book/07-git-branching-branch-management-and-commit-history.md)
 
