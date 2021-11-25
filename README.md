@@ -1,4 +1,4 @@
-# ncc-git-basic
+# [ncc-git-basic](https://nccasia.github.io/ncc-git-basic/)
 
 NCC Git Basic là một series về git cơ bản, trong series này mình sẽ cố gắng chắt lọc và giới thiệu đến các bạn những kiến thức cơ bản nhất, hay được sử dụng trong thực tế nhất. Giúp các bạn tránh lan man, học dàn trải khi tiếp cận git.
 
