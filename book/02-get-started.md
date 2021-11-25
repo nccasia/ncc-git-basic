@@ -17,8 +17,9 @@ Các bạn tham khảo hướng dẫn cài đặt git trên documents nha! Mình
 ### Your Identity
 
 ```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
+git config user.name "John Doe"
+
+git config user.email johndoe@example.com
 ```
 
 ### Alias

@@ -26,4 +26,4 @@
 
 ## 4. `git push`
 
-**Dangerous** `git push -f` - Force Push
+**Dangerous** `git push -f`: Force Push
